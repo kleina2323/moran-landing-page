@@ -181,18 +181,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
 .hero-icon {
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    animation: slideInDown 0.8s ease-out;
+    border: 5px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    background: white;
 }
 
 .hero-subtitle {
@@ -749,4 +749,48 @@ footer p {
     }
 
     .menu-toggle {
- 
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .about-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .program-grid,
+    .video-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        padding: 4rem 1rem;
+    }
+
+    .about,
+    .videos,
+    .programs,
+    .testimonials,
+    .contact {
+        padding: 3rem 1rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
