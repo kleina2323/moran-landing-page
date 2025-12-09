@@ -6,10 +6,10 @@
 }
 
 :root {
-    --primary-color: #1E88E5;
-    --secondary-color: #42A5F5;
-    --accent-color: #00D9FF;
-    --dark-accent: #0D47A1;
+    --primary-color: #9333EA;
+    --secondary-color: #EC4899;
+    --accent-color: #14B8A6;
+    --dark-accent: #6B21A8;
     --text-dark: #1a1a2e;
     --text-light: #16213e;
     --bg-light: #f8f9fa;
@@ -51,10 +51,12 @@ header {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 900;
     color: var(--primary-color);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-align: center;
+    flex: 1;
 }
 
 .nav-menu {
@@ -93,7 +95,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(30, 136, 229, 0.88) 0%, rgba(66, 165, 245, 0.85) 50%, rgba(0, 217, 255, 0.82) 100%),
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.90) 0%, rgba(236, 72, 153, 0.88) 50%, rgba(20, 184, 166, 0.85) 100%),
                 url('https://drive.google.com/uc?export=view&id=1MzQzg7ePBmpcQF7J0chbuf1xCz3ej9gk') center/cover no-repeat;
     color: var(--white);
     padding: 7rem 2rem;
@@ -188,7 +190,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
-    box-shadow: 0 6px 25px rgba(30, 136, 229, 0.4);
+    box-shadow: 0 6px 25px rgba(147, 51, 234, 0.5);
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -208,7 +210,7 @@ header {
 
 .cta-button:hover {
     transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 10px 35px rgba(30, 136, 229, 0.6);
+    box-shadow: 0 10px 35px rgba(236, 72, 153, 0.7);
 }
 
 .cta-button:hover::before {
@@ -286,7 +288,7 @@ header {
 .about-extra-image img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(30, 136, 229, 0.3);
+    box-shadow: 0 10px 40px rgba(147, 51, 234, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -434,14 +436,14 @@ header {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(30, 136, 229, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(147, 51, 234, 0.08) 0%, transparent 70%);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
 .program-card:hover {
     transform: translateY(-15px) scale(1.02);
-    box-shadow: 0 15px 45px rgba(30, 136, 229, 0.3);
+    box-shadow: 0 15px 45px rgba(147, 51, 234, 0.4);
     border-color: var(--accent-color);
 }
 
