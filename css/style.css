@@ -819,6 +819,7 @@ footer p {
 
     section h2 {
         font-size: 1.5rem;
+        white-space: nowrap;
     }
 
     .container {
