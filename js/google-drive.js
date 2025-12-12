@@ -86,22 +86,22 @@ function displayPlaceholderVideos() {
             isGoogleDrive: true
         },
         {
-            title: 'ימי גיבוש',
-            description: 'סדנאות תנועה מותאמות וימי גיבוש לצוותים',
+            title: 'השתלמות למורים וגננות',
+            description: 'הכשרה מקצועית לצוותי חינוך בתחום התנועה',
             thumbnail: 'https://drive.google.com/thumbnail?id=1z1py44gczyDk_MFXnRiZTkokosRbgu0D&sz=w400',
             videoUrl: 'https://drive.google.com/file/d/1z1py44gczyDk_MFXnRiZTkokosRbgu0D/preview',
             isGoogleDrive: true
         },
         {
-            title: 'פעילות בגן ילדים',
-            description: 'פעילות תנועה מהנה וחווייתית לילדי הגן',
+            title: 'ימי גיבוש לצוותים',
+            description: 'פעילות תנועה מהנה וחווייתית לצוותים',
             thumbnail: 'https://drive.google.com/thumbnail?id=161eKzNZ9A1W-tSIv3tvQptkfHoJ9u80I&sz=w400',
             videoUrl: 'https://drive.google.com/file/d/161eKzNZ9A1W-tSIv3tvQptkfHoJ9u80I/preview',
             isGoogleDrive: true
         },
         {
-            title: 'סדנת תנועה',
-            description: 'סדנת תנועה מקצועית - הדגמה והדרכה',
+            title: 'סדנאות תנועה לנוער',
+            description: 'פעילות תנועה מהנה ומעצימה לבני נוער',
             thumbnail: 'https://drive.google.com/thumbnail?id=16xeE8MSY303TM9G6p9MLr2FQDrs6TUWc&sz=w400',
             videoUrl: 'https://drive.google.com/file/d/16xeE8MSY303TM9G6p9MLr2FQDrs6TUWc/preview',
             isGoogleDrive: true
