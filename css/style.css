@@ -751,6 +751,12 @@ footer p {
     .hero {
         padding: 2rem 1rem;
         min-height: auto;
+        overflow: visible;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 0.5rem;
     }
 
     .hero h1 {
@@ -758,6 +764,8 @@ footer p {
         line-height: 1.4;
         letter-spacing: 0;
         text-transform: none;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .hero-subtitle {
