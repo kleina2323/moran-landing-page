@@ -192,14 +192,14 @@ header {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
     margin-bottom: 1rem;
     opacity: 0.95;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
     opacity: 0.9;
     line-height: 1.8;
