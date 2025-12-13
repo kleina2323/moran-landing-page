@@ -25,6 +25,11 @@ body {
     color: var(--text-dark);
     background-color: var(--white);
     direction: rtl;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 .container {
@@ -880,7 +885,11 @@ footer p {
     .hero {
         padding: 2rem 1rem;
         min-height: auto;
-        overflow: visible;
+        overflow: hidden;
+    }
+
+    .hero::after {
+        display: none;
     }
 
     .hero-content {
@@ -948,11 +957,14 @@ footer p {
 
     section h2 {
         font-size: 1.3rem;
-        white-space: nowrap;
+        white-space: normal;
+        word-wrap: break-word;
     }
 
     .container {
         padding: 0 1rem;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .about,
@@ -962,6 +974,7 @@ footer p {
     .contact,
     .who-am-i {
         padding: 2rem 0.5rem;
+        overflow-x: hidden;
     }
 
     .who-am-i-header {
