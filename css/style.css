@@ -964,7 +964,8 @@ footer p {
         line-height: 1.4;
         letter-spacing: 0;
         text-transform: none;
-        white-space: nowrap;
+        white-space: normal;
+        word-wrap: break-word;
     }
 
     .hero-subtitle {
@@ -1119,7 +1120,8 @@ footer p {
 
     .hero h1 {
         font-size: 1.1rem;
-        white-space: nowrap;
+        white-space: normal;
+        word-wrap: break-word;
     }
 
     .hero-subtitle {
