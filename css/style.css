@@ -142,7 +142,8 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .hero::before {
@@ -441,6 +442,8 @@ header {
 .programs {
     padding: 3rem 2rem;
     background: var(--bg-light);
+    position: relative;
+    z-index: 2;
 }
 
 .programs h2 {
