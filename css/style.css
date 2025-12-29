@@ -78,6 +78,45 @@ header {
     margin-top: -5px;
 }
 
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.logo-name {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.logo-tagline {
+    font-size: 0.9rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 1px;
+}
+
+.logo-image-outline {
+    height: 55px;
+    width: 55px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 8px rgba(8, 145, 178, 0.3);
+    transition: all 0.3s ease;
+}
+
+.logo-image-outline:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.4);
+}
+
 .brain-motion-icon {
     filter: drop-shadow(0 2px 4px rgba(8, 145, 178, 0.3));
     transition: transform 0.3s ease;
