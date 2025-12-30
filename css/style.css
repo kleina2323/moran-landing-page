@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+/* Wave Icon below description */
+.wave-icon {
+    width: 650px;
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-top: 20px;
+    filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.4));
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
 :root {
     --primary-color: #0891B2;
     --secondary-color: #06B6D4;
