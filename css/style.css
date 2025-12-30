@@ -7,15 +7,17 @@
 
 /* Wave Icon below description */
 .wave-icon {
-    width: 650px;
-    max-width: 90%;
-    height: auto;
-    object-fit: contain;
+    width: 900px;
+    max-width: 95%;
+    height: 180px;
+    object-fit: cover;
     border-radius: 20px;
     margin-top: 20px;
     filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.4));
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
 }
 
 :root {
@@ -1085,6 +1087,7 @@ footer p {
     .program-card {
         padding: 1.2rem;
         overflow: hidden;
+        touch-action: pan-y;
     }
     
     .program-card::after {
@@ -1093,6 +1096,7 @@ footer p {
 
     .program-card:hover {
         transform: none;
+        box-shadow: var(--shadow);
     }
 
     .program-card h3 {
