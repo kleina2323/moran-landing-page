@@ -5,21 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Wave Icon below description */
-.wave-icon {
-    width: 900px;
-    max-width: 95%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 20px;
-    margin-top: 20px;
-    filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.4));
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
-}
-
 :root {
     --primary-color: #0891B2;
     --secondary-color: #06B6D4;
