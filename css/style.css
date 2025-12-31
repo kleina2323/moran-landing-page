@@ -778,11 +778,12 @@ header {
 }
 
 .credentials-list li::before {
-    content: '✓';
+    content: '◆';
     position: absolute;
     right: 0;
     color: var(--primary-color);
     font-weight: bold;
+    font-size: 0.8rem;
 }
 
 .who-am-i .about-image img {
