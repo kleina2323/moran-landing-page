@@ -1,0 +1,24 @@
+# Ignore node modules if you add any build tools later
+node_modules/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore environment files (if you add any)
+.env
+.env.local
+
+# Ignore build directories (if you add build tools)
+dist/
+build/
+
+# Ignore log files
+*.log
+npm-debug.log*
