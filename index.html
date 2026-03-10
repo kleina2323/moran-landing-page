@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="מורן קליין - Move & Groove אימון מוח תנועתי. תכניות תנועה מקצועיות לגנים, בתי ספר, בתי אבות ומועדוני יום. הכשרת צוותי חינוך לשיפור מיומנויות קוגניטיביות, התנהגותיות ורגשיות.">
+    <meta property="og:title" content="מורן קליין - Move & Groove | אימון מוח תנועתי">
+    <meta property="og:description" content="אימון מוח תנועתי - הכשרת צוותי חינוך לשיפור מיומנויות קוגניטיביות, התנהגותיות ורגשיות דרך תנועה">
+    <meta property="og:type" content="website">
+    <title>מורן קליין - Move & Groove | אימון מוח תנועתי</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=20251229">
+    
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDrbPrU1eYp3b1dGuN-shAmXGF5CJIq05c",
+            authDomain: "moran-landing.firebaseapp.com",
+            projectId: "moran-landing",
+            storageBucket: "moran-landing.firebasestorage.app",
+            messagingSenderId: "508860455470",
+            appId: "1:508860455470:web:4637184f55f703dc0eddbf"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="images/main-logo.png" alt="Move & Groove Logo" class="logo-image-outline">
+                <div class="logo-text">
+                    <span class="logo-name">מורן קליין</span>
+                    <span class="logo-tagline">Move & Groove</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#programs">תכניות</a></li>
+                <li><a href="#videos">סרטונים</a></li>
+                <li><a href="#about">מי אני</a></li>
+                <li><a href="#contact">צור קשר</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="תפריט">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>תכניות תנועה מקצועיות למוסדות חינוך וקהילה</h1>
+            <p class="hero-subtitle">סדנאות, ימי גיבוש והכשרות מקצועיות</p>
+            <p class="hero-description">
+                מתמחה בפיתוח תכניות תנועה ייחודיות המשלבות
+                <br>מיומנויות קוגניטיביות, התנהגותיות ורגשיות באמצעות&nbsp;תנועה.
+                <br>השיטות מבוססות מחקר ונסיון רב שנים.
+            </p>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <h2>התכניות שלי</h2>
+            <div class="program-grid">
+                <div class="program-card">
+                    <h3>🏫 תכנית תנועתית לבתי ספר וגנים</h3>
+                    <p>תרגילי קצב מותאמים לגיל ורמת המשתתפים</p>
+                    <ul class="features">
+                        <li>סדרת סרטונים עם רצף תרגילים המתפתחים בהדרגה</li>
+                        <li>הדרכה ראשונית לצוות החינוכי לפני תחילת התכנית</li>
+                        <li>ליווי והדרכה במהלך התכנית בהתאם לצורך</li>
+                        <li>הצוות מקרין ומבצע את התרגילים יחד עם הילדים</li>
+                        <li>מאפשר מספר בלתי מוגבל של משתתפים</li>
+                    </ul>
+                </div>
+                
+                <div class="program-card">
+                    <h3>🧠 תכנית פרטני תנועתי</h3>
+                    <p>מודל ייחודי לאימון תנועתי קוגניטיבי, רגשי והתנהגותי</p>
+                    <ul class="features">
+                        <li>שילוב תרגילים משלוש שיטות שונות</li>
+                        <li>כרטיסיות הסברים מפורטות + סרטוני הדגמה</li>
+                        <li>הדרכה מלאה לצוות הרלוונטי</li>
+                        <li>מותאם לקבוצות קטנות בגילאים שונים</li>
+                        <li>מתאים מגיל גן ועד אוניברסיטה</li>
+                    </ul>
+                </div>
+                
+                <div class="program-card">
+                    <h3>👴 תכנית לגיל השלישי</h3>
+                    <p>מתאים למועדוני ותיקים, בתי אבות ומועדוני יום</p>
+                    <ul class="features">
+                        <li>תכנית חדשנית מותאמת ליכולת הפיזית של המשתתפים</li>
+                        <li>תרגילים בישיבה או בעמידה - לפי היכולת</li>
+                        <li>רצף תרגילים מדורגים בסרטונים</li>
+                        <li>הדרכה ראשונית וליווי לצוות</li>
+                        <li>הצוות מבצע תרגילים עם המשתתפים מול סרטון מוקרן</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2>סרטונים והדגמות</h2>
+            <div class="video-grid" id="video-grid">
+                <!-- Videos will be loaded from Google Drive -->
+                <div class="video-placeholder">
+                    <p>טוען סרטונים...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Am I Section -->
+    <section id="about" class="who-am-i">
+        <div class="container">
+            <h2>מי אני?</h2>
+            <div class="who-am-i-content">
+                <div class="who-am-i-text">
+                    <div class="who-am-i-header">
+                        <img src="images/moran.jpeg" alt="מורן קליין" class="who-am-i-image">
+                        <div class="who-am-i-title">
+                            <h3>מורן קליין</h3>
+                            <p class="contact-details">
+                                📞 <a href="tel:054-449-9769">054-449-9769</a> | 📧 <a href="mailto:moranklein53@gmail.com">moranklein53@gmail.com</a>
+                            </p>
+                            <p class="personal-info">נשואה +3, גרה בכפר יהושע</p>
+                        </div>
+                    </div>
+                    
+                    <div class="credentials-list">
+                        <h4>תפקידים והשכלה:</h4>
+                        <ul>
+                            <li>מורה למדעים וחינוך גופני</li>
+                            <li>רכזת מדעים ורכזת מעורבות חברתית בביה"ס השש שנתי כדורי</li>
+                            <li>מדריכת קידום בריאות מחוזית במחוז ההתיישבותי במשרד החינוך</li>
+                            <li>B.Ed בחינוך גופני (וינגייט)</li>
+                            <li>M.Ed בהוראת המדעים (אורנים)</li>
+                        </ul>
+                        
+                        <h4>ניסיון והתמחות:</h4>
+                        <ul>
+                            <li>עוסקת בתנועה כ-3 עשורים: מלמדת, יוצרת, מאמנת</li>
+                            <li>בשנים האחרונות עוסקת באימון מוח תנועתי</li>
+                            <li>מעבירה השתלמויות וכנסים למורים, גננות וצוותים</li>
+                            <li>בוגרת 3 שיטות לאימון מוח תנועתי קוגניטיבי למבוגרים ולילדים בעלי קשיים קוגניטיבים, רגשיים והתנהגותיים</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>צור קשר</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>פרטי התקשרות</h3>
+                    <p>📞 טלפון: <a href="tel:054-449-9769">054-449-9769</a></p>
+                    <p>📧 אימייל: <a href="mailto:moranklein53@gmail.com">moranklein53@gmail.com</a></p>
+                    <p>📍 פעילות ברחבי הארץ</p>
+                    <p>🎯 סדנאות, ימי גיבוש והכשרות מקצועיות</p>
+                    <a href="https://wa.me/972544499769" target="_blank" class="whatsapp-btn">
+                        <span class="whatsapp-icon">💬</span> שלח הודעה בוואטסאפ
+                    </a>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">שם מלא *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">אימייל *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">טלפון</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="institution">סוג המוסד</label>
+                        <select id="institution" name="institution">
+                            <option value="">בחר סוג מוסד</option>
+                            <option value="kindergarten">גן ילדים</option>
+                            <option value="school">בית ספר</option>
+                            <option value="elderly">בית אבות / מועדון יום</option>
+                            <option value="other">אחר</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">הודעה *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">שלח הודעה</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 מורן קליין - תכניות תנועה מקצועיות. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/google-drive.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>
